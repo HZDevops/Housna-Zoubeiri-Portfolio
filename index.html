@@ -18,8 +18,11 @@
 <body>
     
     <header class="py-4">
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+       <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="./img/logo.png" alt="logo Housna" width="100" height="50">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,7 +53,6 @@
                     <div class="col-12 col-md-6">
                         <h1 class="fw-bold">Développeuse Web</h1>
                         <h2 class="fw-light">Housna Zoubeiri</h2>
-                        <button type="button" class="btn btn-dark mt-5">Mon expertise Web</button>
                     </div>
                     <div class="col-12 col-md-6">
                         <img src="./img/myAvatar.png" alt="Avatar Housna Zoubeiri" width="100%">
@@ -201,11 +203,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-3 p-3">
-                            <div class="row align-items-center mt-5">
-                                <a href="#" type="button" class="btn btn-dark">Télécharger CV</a>
-                            </div>
-                        </div>                       
+                    </div>
+                    <div class="row gy-4">
+                        <div class="text-center w-40">
+                            <a class="btn btn-dark" href="cv-housna.pdf" download>Télécharger mon CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,34 +217,58 @@
                 <h2 class="mb-0">Mon portfolio</h2>
                 <h3 class="fw-light fs-5">Mes réalisations</h3>
                 <div class="row gy-4 mt-4">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="./img/Ohmyfood2.jpg" class="card-img-top" alt="...">
+                            <img src="./img/Zenfood-card.jpg" class="card-img-top" alt="Photo site Zenfood">
                             <div class="card-body">
-                                <h5 class="card-title">Projet Ohmyfood</h5>
+                                <h5 class="card-title">Zenfood</h5>
                                 <p>Projet pédagogique</p>
-                                <a href="ohmyfood-detail.html" class="stretched-link"></a>
+                                <button class="btn btn-dark" type="button"data-bs-toggle="offcanvas" data-bs-target="#infozenfood"
+                                   aria-controls="infozenfood" class="stretched-link">En savoir plus</button>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infozenfood" aria-labelledby="titlezenfood">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titlezenfood">Zenfood</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <p>Implémenter la version mobile d'un site de foodtech avec des animations CSS</p>
+                                    <img src="./img/Zenfood-offcanvas.jpg" class="card-img-top w-25" alt="photo maquette Reservia">
+                                    <a href="https://hzdevops.github.io/HousnaZoubeiri_3_21062021/" class="btn btn-dark" target="blank">Aller sur le site</a>                                    
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="./img/Reservia.png" class="card-img-top" alt="...">
+                            <img src="./img/Reservia.jpg" class="card-img-top h-100" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Projet Réservia</h5>
+                                <h5 class="card-title">Réservia</h5>
                                 <p>Projet pédagogique</p>
-                                <a href="reservia-detail.html" class="stretched-link"></a>
+                                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#infoReservia"
+                                    aria-controls="infoReservia">En savoir plus</button>
                             </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoReservia" aria-labelledby="titleReservia">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titleReservia">Reservia</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <p>Intégration d'une maquette de la page web d'une plateforme de réservation d'hébergement avec HTML et CSS</p>
+                                    <img src="./img/Reservia-offcanvas.jpg" class="card-img-top w-50" alt="photo maquette Reservia">
+                                    <a href="https://hzdevops.github.io/HousnaZoubeiri_2_11052021/" class="btn btn-dark" target="blank">Aller sur le site</a>
+                                </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <!--<div class="col-3">
                         <div class="bg-secondary h-100 w-100 py-5">
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="bg-secondary h-100 w-100 py-5">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>
@@ -264,15 +290,15 @@
                                 <input name="name" type="text" class="form-control" id="name">
                             </div>
                             <div class="col-12 my-2">
-                                <label for="email" class="form-label">Email address</label>
+                                <label for="email" class="form-label">Addresse email</label>
                                 <input name="email" type="email" class="form-control" id="email">
                             </div>
                             <div class="col-12 my-2">
                                 <label for="message" class="form-label">Message</label>
                                 <textarea name="message" class="form-control" id="message" rows="3"></textarea>
                             </div>
-                            <div class="col-12 my-2">
-                                <button type="submit" class="btn btn-dark w-100">Envoyer</button>
+                            <div class="col-12 my-2 text-center">
+                                <button type="submit" class="btn btn-dark w-40">Envoyer</button>
                             </div>
                         </form>
                     </div>
@@ -284,18 +310,18 @@
         <div class="container py-5">
             <div class="row gy-4 align-items-center">
                 <div class="col-12 col-md-6 text-md-center">
-                   <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2018 | Design by Housna |</a>
+                   <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2022 | Design by Housna |</a>
                 </div>
                 <div class="col-12 col-md-6 text-md-center">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
+                            <a href="https://www.linkedin.com/in/housna-zoubeiri/" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="LinkedIn">
                                     <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
+                            <a href="https://twitter.com/zoubeiri_housna" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="Twitter">
                                     <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
                             </a>
