@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Housna Zoubeiri - Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -38,14 +39,43 @@
     <main>
         <div class="container py-5">
             <div class="row align-items-center">
-                <h1 class="fw-bold">Réservia</h1>
-                <p class="pt-5 fw-bold">Création d'un prototype d'une plate-forme de réservation d'hébergement :</p>
-                <p>Intégration d'une page web conformément à une maquette design basée sur les principes du Material Design.</p>
-                <p class="fst-italic">Langages utilisés: HTML et CSS</p>
-                <div class="row gy-2">
+                <h1 class="fw-bold">Groupomania</h1>
+                <p class="pt-3">Ce projet consistait à développer un MVP d'un réseau social interne d'une entreprise (front-end et back-end).</p>
+                <p> Fonctionnalités codés: <br>* Création et suppression d'un compte utilisateur,<br>* Edition et mise à jour du profil,<br>* Accès à un forum où les salariés publient des textes et des contenus multimédias.</p>
+                <p class="fst-italic">Stack utilisé: Vue.js, Vuex, Vue Router, NodeJS, Express, Sequelize et MySQL</p>
+                <div class="row">
                     <div class="text-center w-40">
-                        <a href="https://hzdevops.github.io/HousnaZoubeiri_2_11052021/" class="btn btn-dark"
-                            target="blank">Démo site</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#videoModal">Démo site</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="videoModal">
+                        <div class="modal-dialog">
+
+                            <!--Content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Démonstration API réseau social d'entreprise</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <iframe width="450" height="350" src="https://www.youtube.com/embed/K5t1GoQ-v8I"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
