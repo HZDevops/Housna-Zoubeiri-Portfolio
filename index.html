@@ -26,7 +26,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navbarNav" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
                        <li class="nav-item">
                             <a class="nav-link fs-5 text" href="#expertise">Expertise</a>
@@ -52,10 +52,10 @@
                     <div class="col-12 col-md-6">
                         <h1 class="fw-bold">Développeuse Web</h1>
                         <h2 class="fw-light">Housna Zoubeiri</h2>
-                        <h3 class="fst-italic fw-bold">Je code...et j'aime ça!</h2>
+                        <h3 class="fst-italic fw-bold">Je code...et j'aime ça!</h3>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./img/myAvatar.png" alt="Avatar Housna Zoubeiri" width="100%">
+                        <img id="avatar" src="./img/myAvatar.png" alt="Avatar Housna Zoubeiri">
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="row gy-4">
                         <div class="text-center w-40">
-                            <a class="btn btn-dark" href="CV Housna ZOUBEIRI.pdf" download>Télécharger mon CV</a>
+                            <a class="btn btn-dark" href="CV_Housna-ZOUBEIRI.pdf" download>Télécharger mon CV</a>
                         </div>
                     </div>
                 </div>
@@ -249,18 +249,19 @@
                 <h2 class="mb-0">Mon portfolio</h2>
                 <h3 class="fw-light fs-5">Mes réalisations</h3>
                 <div class="row gy-4 mt-4">
+                    <!--Projet 1-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./img/Zenfood.jpg" class="card-img-top img-thumbnail" alt="Photo site Zenfood">
                             <a class="animation" data-bs-toggle="modal" data-bs-target="#zenfoodModal">
                                 <div class="folio-item">
-                                    <h5 class="folio-title fw-bold">Zenfood</h3>
+                                    <h5 class="folio-title fw-bold">Zenfood</h5>
                                     <span class="folio-type">Site Web</span>
                                 </div>
                             </a>
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="zenfoodModal" tabindex="-1" aria-labelledby="zenfoodModalLabel" aria-hidden="true">
+                        <!-- Modal Projet 1-->
+                        <div class="modal fade" id="zenfoodModal" tabindex="-1">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -275,7 +276,7 @@
                                             systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts
                                             à leur arrivée.</p>
                                             <h4 class="fw-bold mt-5">Construit avec:</h4>
-                                            <ul class="my-3">
+                                            <ul class="mt-3 mb-5">
                                                 <li class="text-grey">HTML</li>
                                                 <li class="text-grey">SASS</li>
                                             </ul>
@@ -286,9 +287,10 @@
                             </div>
                         </div>
                     </div>
+                    <!--Projet 2-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="./img/Reservia.jpg" class="card-img-top img-thumbnail" alt="Photo site Zenfood">
+                            <img src="./img/Reservia.jpg" class="card-img-top img-thumbnail" alt="Photo site Reservia">
                             <a class="animation" data-bs-toggle="modal" data-bs-target="#reserviaModal">
                                 <div class="folio-item">
                                     <h5 class="folio-title fw-bold">Réservia</h5>
@@ -296,21 +298,21 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="reserviaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <!-- Modal Projet 2-->
+                        <div class="modal fade" id="reserviaModal" tabindex="-1">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="./img/Reservia-modal.jpg" class="card-img-top img-thumbnail" alt="...">
+                                        <img src="./img/Reservia-modal.jpg" class="card-img-top img-thumbnail" alt="Photo site Reservia">
                                         <div class="modal-text">
                                             <p class="fst-italic mt-3 text-muted">Site Web - projet pédagogique</p>
                                             <h4 class="fw-bold mt-5">Réservia</h4>
-                                            <p class="mt-3 text-grey">Le projet consistait à créer un prototype d'une plate-forme de réservation d'hébergement en intégrant une page web conformément à une maquette design basée sur les principes du Material Design.</p>
+                                            <p class="mt-3 text-grey">Le projet consistait à créer un prototype d'une plate-forme de réservation d'hébergement en intégrant une maquette design en site web responsive mobile et desktop.</p>
                                             <h4 class="fw-bold mt-5">Construit avec:</h4>
-                                            <ul class="my-3">
+                                            <ul class="mt-3 mb-5">
                                                 <li class="text-grey">HTML</li>
                                                 <li class="text-grey">CSS</li>
                                             </ul>
@@ -321,37 +323,89 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <img src="./img/Reservia.jpg" class="card-img-top h-100" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Réservia</h5>
-                                <p class="fst-italic">Projet pédagogique</p>
-                                <a class="btn btn-dark" href="reservia.html" class="stretched-link">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>-->
+                    <!--Projet 3-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="./img/Orinoco.jpg" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Orinoco</h5>
-                                <p class="fst-italic">Projet pédagogique</p>
-                                <a class="btn btn-dark" href="orinoco.html" class="stretched-link">En savoir plus</a>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <img src="./img/Groupomania.jpg" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Groupomania</h5>
-                                <p class="fst-italic">Projet pédagogique</p>
-                                <a class="btn btn-dark" href="reseau-social.html" class="stretched-link">En savoir plus</a>
+                            <img src="./img/Orinoco.jpg" class="card-img-top img-thumbnail" alt="Photo site Orinoco">
+                            <a class="animation" data-bs-toggle="modal" data-bs-target="#orinocoModal">
+                                <div class="folio-item">
+                                    <h5 class="folio-title fw-bold">Orinoco</h5>
+                                    <span class="folio-type">Site e-commerce</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Modal Projet 3-->
+                        <div class="modal fade" id="orinocoModal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Orinoco-modal.jpg" class="card-img-top img-thumbnail" alt="Photo site Orinoco">
+                                        <div class="modal-text">
+                                            <p class="fst-italic mt-3 text-muted">Site e-commerce - projet pédagogique</p>
+                                            <h4 class="fw-bold mt-5">Orinoco</h4>
+                                            <p class="mt-3 text-grey">Ce projet consistait à développer le front-end d'un site de e-commerce, le back-end de l'API étant fourni.<br>La
+                                            récupération des produits et leurs détails de l'API ainsi que la gestion de l'ajout des produits au panier sont effectuées dynamiquement.</p>
+                                            <h4 class="fw-bold mt-5">Construit avec:</h4>
+                                            <ul class="mt-3 mb-5">
+                                                <li class="text-grey">HTML</li>
+                                                <li class="text-grey">CSS</li>
+                                                <li class="text-grey">JavaScript</li>
+                                            </ul>
+                                            <a href="https://www.youtube.com/embed/4Jh__Vwu8qc" class="btn btn-dark fw-bold text-white" target="blank">Voir le projet</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                   
+                    <!--Projet 4-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/Groupomania.jpg" class="card-img-top img-thumbnail" alt="Photo site Groupomania">
+                            <a class="animation" data-bs-toggle="modal" data-bs-target="#groupomaniaModal">
+                                <div class="folio-item">
+                                    <h5 class="folio-title fw-bold">Groupomania</h5>
+                                    <span class="folio-type">Application</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Modal Projet 4-->
+                        <div class="modal fade" id="groupomaniaModal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Groupomania-modal.jpg" class="card-img-top img-thumbnail" alt="Photo site Orinoco">
+                                        <div class="modal-text">
+                                            <p class="fst-italic mt-3 text-muted">Application - projet pédagogique</p>
+                                            <h4 class="fw-bold mt-5">Groupomania</h4>
+                                            <p class="mt-3 text-grey">Ce projet consistait à développer un MVP d'un réseau social interne d'une entreprise (front-end et back-end). Les fonctionnalités suivantes ont été développées: la création et la suppression d'un compte utilisateur, l'édition et la mise à jour du profil utilisateur ainsi que l'accès à un forum où les salariés peuvent publier des textes et des contenus multimédias.</p>
+                                            <h4 class="fw-bold mt-5">Construit avec:</h4>
+                                            <ul class="mt-3 mb-5">
+                                                <li class="text-grey">Vue.js</li>
+                                                <li class="text-grey">Vuex</li>
+                                                <li class="text-grey">Vue Router</li>
+                                                <li class="text-grey">NodeJS</li>
+                                                <li class="text-grey">Express</li>
+                                                <li class="text-grey">MySQL</li>
+                                            </ul>
+                                            <a href="https://www.youtube.com/embed/K5t1GoQ-v8I" class="btn btn-dark fw-bold text-white" target="blank">Voir Projet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="row gy-4 mt-3">
+                    <div class="text-center w-40">
+                        <a class="btn btn-dark" href="https://github.com/HZDevops">Voir plus de projets</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -393,20 +447,20 @@
         <div class="container py-5">
             <div class="row gy-4 align-items-center">
                 <div class="col-12 col-md-6 text-md-center">
-                   <a href="#" class="text-decoration-none btn-dark btn-dark" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2022 | Design by Housna |</a>
+                   <a href="#" class="text-decoration-none nav-link" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2022 | Design by Housna |</a>
                 </div>
                 <div class="col-12 col-md-6 text-md-center">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
                             <a href="https://www.linkedin.com/in/housna-zoubeiri/" target="blank" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="LinkedIn">
-                                    <i class="fab fa-linkedin fa-2x btn-dark" aria-hidden="true"></i>
+                                    <i class="fab fa-linkedin fa-2x nav-link" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com/zoubeiri_housna" target="blank" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="Twitter">
-                                    <i class="fab fa-twitter-square fa-2x btn-dark" aria-hidden="true"></i>
+                                    <i class="fab fa-twitter-square fa-2x nav-link" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
