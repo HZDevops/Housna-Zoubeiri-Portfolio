@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Housna Zoubeiri - Portfolio</title>
+    <title>Housna Zoubeiri | Portfolio | Développeuse Full-Stack</title>
 
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -19,8 +19,8 @@
     <header class="py-4">
        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="./img/logo.png" alt="logo Housna" width="100" height="50">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.jpg" alt="logo Housna" width="100" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -238,7 +238,7 @@
                     </div>
                     <div class="row gy-4">
                         <div class="text-center w-40">
-                            <a class="btn btn-dark" href="cv-housna.pdf" download>Télécharger mon CV</a>
+                            <a class="btn btn-dark" href="CV Housna ZOUBEIRI.pdf" download>Télécharger mon CV</a>
                         </div>
                     </div>
                 </div>
@@ -252,14 +252,76 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./img/Zenfood.jpg" class="card-img-top img-thumbnail" alt="Photo site Zenfood">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Zenfood</h5>
-                                <p class="fst-italic">Projet pédagogique</p>
-                                <a class="btn btn-dark" href="zenfood.html" class="stretched-link">En savoir plus</a>
+                            <a class="animation" data-bs-toggle="modal" data-bs-target="#zenfoodModal">
+                                <div class="folio-item">
+                                    <h5 class="folio-title fw-bold">Zenfood</h3>
+                                    <span class="folio-type">Site Web</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="zenfoodModal" tabindex="-1" aria-labelledby="zenfoodModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Zenfood-modal.jpg" class="card-img-top" alt="...">
+                                        <div class="modal-text">
+                                            <p class="fst-italic mt-3 text-muted">Site Web - projet pédagogique</p>
+                                            <h4 class="fw-bold mt-5">Zenfood</h4>
+                                            <p class="mt-3 text-grey">L'objectif du projet était de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des
+                                            systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts
+                                            à leur arrivée.</p>
+                                            <h4 class="fw-bold mt-5">Construit avec:</h4>
+                                            <ul class="my-3">
+                                                <li class="text-grey">HTML</li>
+                                                <li class="text-grey">SASS</li>
+                                            </ul>
+                                            <a href="https://hzdevops.github.io/HousnaZoubeiri_3_21062021/" class="btn btn-dark fw-bold text-white" target="blank">Voir le projet</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/Reservia.jpg" class="card-img-top img-thumbnail" alt="Photo site Zenfood">
+                            <a class="animation" data-bs-toggle="modal" data-bs-target="#reserviaModal">
+                                <div class="folio-item">
+                                    <h5 class="folio-title fw-bold">Réservia</h5>
+                                    <span class="folio-type">Site Web</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="reserviaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Reservia-modal.jpg" class="card-img-top img-thumbnail" alt="...">
+                                        <div class="modal-text">
+                                            <p class="fst-italic mt-3 text-muted">Site Web - projet pédagogique</p>
+                                            <h4 class="fw-bold mt-5">Réservia</h4>
+                                            <p class="mt-3 text-grey">Le projet consistait à créer un prototype d'une plate-forme de réservation d'hébergement en intégrant une page web conformément à une maquette design basée sur les principes du Material Design.</p>
+                                            <h4 class="fw-bold mt-5">Construit avec:</h4>
+                                            <ul class="my-3">
+                                                <li class="text-grey">HTML</li>
+                                                <li class="text-grey">CSS</li>
+                                            </ul>
+                                            <a href="https://hzdevops.github.io/HousnaZoubeiri_2_11052021/" class="btn btn-dark fw-bold text-white" target="blank">Voir le projet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./img/Reservia.jpg" class="card-img-top h-100" alt="...">
                             <div class="card-body">
@@ -268,7 +330,7 @@
                                 <a class="btn btn-dark" href="reservia.html" class="stretched-link">En savoir plus</a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./img/Orinoco.jpg" class="card-img-top img-thumbnail" alt="...">
@@ -331,20 +393,20 @@
         <div class="container py-5">
             <div class="row gy-4 align-items-center">
                 <div class="col-12 col-md-6 text-md-center">
-                   <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2022 | Design by Housna |</a>
+                   <a href="#" class="text-decoration-none btn-dark btn-dark" data-bs-toggle="modal" data-bs-target="#mentionsLegales">© Copyright 2022 | Design by Housna |</a>
                 </div>
                 <div class="col-12 col-md-6 text-md-center">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/housna-zoubeiri/" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
+                            <a href="https://www.linkedin.com/in/housna-zoubeiri/" target="blank" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="LinkedIn">
-                                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                                    <i class="fab fa-linkedin fa-2x btn-dark" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://twitter.com/zoubeiri_housna" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
+                            <a href="https://twitter.com/zoubeiri_housna" target="blank" class="text-decoration-none text-white" data-bs-toggle="tooltip" title=""
                                     data-bs-original-title="Twitter">
-                                    <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                                    <i class="fab fa-twitter-square fa-2x btn-dark" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>

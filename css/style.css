@@ -168,6 +168,7 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+  margin-left: 15px;
 }
 
 ol,
@@ -228,8 +229,8 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 a:hover {
   color: #0a58ca;
@@ -257,6 +258,50 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
+
+/***Portfolio card and CSS animation ****/
+
+.animation {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 215px;
+  height: 275px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 0.6rem;
+  transition: background 450ms, color 250ms 200ms;
+}
+
+.folio-item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.folio-title {
+  font-size: 1.5rem;
+  color: transparent;
+}
+
+.folio-type {
+  text-transform: uppercase;
+  color: transparent;
+}
+
+.card:hover .animation {
+  background:rgba(0, 0, 0, 0.8);
+}
+
+.card:hover .folio-title {
+  color:white;
+}
+
+.card:hover .folio-type {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 pre code {
   font-size: inherit;
   color: inherit;
@@ -268,6 +313,7 @@ code {
   color: #d63384;
   word-wrap: break-word;
 }
+
 a > code {
   color: inherit;
 }
@@ -3137,14 +3183,13 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  color: #fff;
+  color:white;
   background-color: #000;
-  border-color: #000;
 }
 .btn-dark:hover {
-  color: #fff;
-  background-color: black;
-  border-color: black;
+  background-color:#cc005f;
+  border:none;
+  color: white;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
@@ -3850,7 +3895,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #d63384;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4380,7 +4425,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.55);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #d63384 ;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -4409,13 +4454,24 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  width: 215px;
+  height: 275px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.6rem;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 400ms;
 }
+
+.card > img {
+  border-radius: 0.6rem;
+  width:215px;
+  height:275px;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4561,7 +4617,6 @@ textarea.form-control-lg {
     border-bottom-left-radius: 0;
   }
 }
-
 .accordion-button {
   position: relative;
   display: flex;
