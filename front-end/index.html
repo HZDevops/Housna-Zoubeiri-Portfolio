@@ -420,24 +420,25 @@
                         <form class="row">
                             <div class="col-6 my-2">
                                 <label for="firstname" class="form-label">Prénom</label>
-                                <input name="firstname" type="text" class="form-control" id="firstname">
+                                <input name="firstname" type="text" class="form-control" id="firstname" placeholder="Ex: Julie" required pattern="[a-zA-Z]{3,20}">
                             </div>
                             <div class="col-6 my-2">
                                 <label for="name" class="form-label">Nom</label>
-                                <input name="name" type="text" class="form-control" id="name">
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Ex: Martin" required pattern="[a-zA-Z]{3,20}">
                             </div>
                             <div class="col-12 my-2">
                                 <label for="email" class="form-label">Addresse email</label>
-                                <input name="email" type="email" class="form-control" id="email">
+                                <input name="email" type="email" class="form-control" placeholder="Ex: monadresse@mail.com" id="email" required>
                             </div>
                             <div class="col-12 my-2">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+                                <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
                             </div>
                             <div class="col-12 my-2 text-center">
                                 <button type="submit" class="btn btn-dark w-40">Envoyer</button>
                             </div>
                         </form>
+                        <div id="error-message"></div>
                     </div>
                 </div>
             </div>
