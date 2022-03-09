@@ -5,6 +5,7 @@ const router = express.Router();
 const contactCtrl = require('../controllers/contact');
 
 //Add authentication routes for User
+router.get('/', contactCtrl.getAllContacts);
 router.post('/',contactCtrl.createContact);
 
 module.exports = router;

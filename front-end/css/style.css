@@ -1413,7 +1413,7 @@ progress {
 
   .col-lg-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 23%;
   }
 
   .col-lg-4 {
@@ -3192,7 +3192,6 @@ textarea.form-control-lg {
 }
 .btn-dark:hover {
   background-color:#cc005f;
-  border:none;
   color: white;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
@@ -4173,7 +4172,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 992px) {
+ {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;

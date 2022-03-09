@@ -11,7 +11,7 @@ dotenv.config();
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_NAME = process.env.DB_NAME;
 
-const contactRoutes = require('./routes/contact');
+const contactRoutes = require('./routes/contact')
 
 //Add headers to allow API access from any origin and methods
 app.use((req, res, next) => {
@@ -31,7 +31,6 @@ app.use(bodyParser.json());
 
 app.use('/api/contacts', contactRoutes);
 
-
 mongoose.connect( 
     `mongodb+srv://hzoubeiri:${DB_PASSWORD}@cluster0.7e2xu.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`,
     {
@@ -45,9 +44,5 @@ mongoose.connect(
     console.log('Connection to MongoDB succeed !');
     }
 );
-
-
-
-
 
 module.exports = app;
