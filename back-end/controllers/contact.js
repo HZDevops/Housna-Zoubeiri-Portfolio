@@ -1,8 +1,12 @@
 const ModelsContact = require('../models/contact');
 
 function createContact (req, res) {
-  const { firstname, name, email, message } =  req.body;
-  const contact = new ModelsContact({firstname, name, email, message});
+  const contact = new ModelsContact({
+    firstname: req.body.firstname,
+    name: req.body.name,
+    email: req.body.email,
+    message: req.body.message
+  });
   contact
     .save()
     .then(() => res.status(201).json({ message: 'Contact saved !' }))
