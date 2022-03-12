@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 
@@ -28,6 +29,13 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.json());
+
+// Static site folder name
+app.use(express.static("front-end"))
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname+'/front-end/index.html'));
+});
 
 app.use('/api/contacts', contactRoutes);
 
