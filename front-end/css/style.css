@@ -465,13 +465,15 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
+button:disabled {
+    color: gray;
+}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
 }
-
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;

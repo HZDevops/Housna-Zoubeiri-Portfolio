@@ -1,14 +1,4 @@
-var contactModal = new bootstrap.Modal(document.getElementById('contactModal'), {
-  keyboard: false,
-});
-
-//Display a pop-up after sending a message
-function displayPopUp() {
-  contactModal.show();
-  contactModal.addEventListener('hide.bs.modal', function (e) {
-   window.location.href = 'index.html';
-  });
-}
+var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
 
 //Put shopping-cart form values in an object and send to server for getting order Id if shopping-cart not empty
 function sendContactFormToServer() {
@@ -19,16 +9,11 @@ function sendContactFormToServer() {
   const contactEmailInput = document.getElementById('contact-email');
   const contactMessageInput = document.getElementById('contact-message');
 
-  /*if (
-    contactFirstNameInput &&
-    contactNameInput &&
-    contactEmailInput &&
-    contactMessageInput === 0
-  ) {
+  if ( !contactFirstNameInput || !contactNameInput || !contactEmailInput || !contactMessageInput ) {
     contactFormSendButton.disabled = true;
   } else {
     contactFormSendButton.disabled = false;
-  }*/
+  }
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const contact = {
@@ -48,9 +33,8 @@ function sendContactFormToServer() {
     })
       .then(function (response) {
         if (response.ok) {
+          document.getElementById('contact-form').reset();
           contactModal.show();
-          window.location.href = 'index.html';
-          return response.json();
         }
       })
       .catch(function (error) {
