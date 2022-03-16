@@ -5540,7 +5540,6 @@ textarea.form-control-lg {
 .modal-backdrop.show {
   opacity: 0.5;
 }
-
 .modal-header {
   display: flex;
   flex-shrink: 0;
@@ -5555,7 +5554,9 @@ textarea.form-control-lg {
   padding: 0.5rem 0.5rem;
   margin: -0.5rem -0.5rem -0.5rem auto;
 }
-
+#modal-form {
+  border-bottom: none;
+}
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
